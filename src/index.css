@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #269ef1;
+  background: -webkit-linear-gradient(to right, #269cf19f, #7136bea1);
+  background: linear-gradient(to right, #269cf196, #7136be7a);
+  width: 100vw;
+  height: 100vh;
+}
+.main_block {
+  border-radius: 10px;
+  background: #e9ebf042;
+  min-width: 50vw;
+  min-height: 50vh;
+}
+.WeatherInfo {
+  min-height: 200px;
+  
+}
+.SelectCity{
+  min-width: 360px;
+  margin-top: 20px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+.SelectCity button {
+  background-image: linear-gradient(to right, #9EEFE1 0%, #4830F0 0%, #9EEFE1 100%);
+  box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+  background-size: 200% auto;
+  transition: .5s;
+  letter-spacing: 2px;
+  cursor: pointer;
+  font-size: 1.2em;
+  font-weight: 200;
+  color: azure;
+  border-radius: 10px;
+  border: none;
+  height: 30px;
+}
+.SelectCity button:hover{
+  background-position: right center;
+}
+.SelectCity input{
+  background-color: rgba(245, 245, 245, 0.39);
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  margin-right: 5px;
+  height: 30px;
+}
+.city_name{
+  color: rgba(0, 0, 0, 0.712);
+  font-family: 'Roboto', sans-serif;
+  font-size: 2em;
+  margin-top: 5%;
+  margin-left: 20%;
+}
+.Temperture{
+    margin-left: 50px;
+    margin-top: 8%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+  }
+.Temperture>div{
+     
+     margin-top: 20px;
+} 
+
