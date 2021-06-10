@@ -1,0 +1,1 @@
+export const SUCCESS_WEATHER = 'SUCCESS_WEATHER';

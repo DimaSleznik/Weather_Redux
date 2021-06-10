@@ -1,7 +1,7 @@
 import React from "react";
-
+import { connect } from "react-redux";
+import { getWeatherFrom } from "../actions";
 function Form({ getWeather }) {
-  console.log(getWeather);
   return (
     <form onSubmit={getWeather} className="SelectCity">
       <input type="text" name="city" placeholder="Введите Город"></input>
@@ -9,4 +9,11 @@ function Form({ getWeather }) {
     </form>
   );
 }
-export default Form;
+const mapDispatchToProps = (dispatch) => {
+  return {
+    getWeather: (e) => {
+      dispatch(getWeatherFrom(e));
+    },
+  };
+};
+export default connect(null, mapDispatchToProps)(Form);
